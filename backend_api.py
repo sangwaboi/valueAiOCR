@@ -11,7 +11,10 @@ app = FastAPI()
 # Allow frontend dev
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
+    allow_origins=[
+        "http://localhost:3000",
+        "https://your-vercel-app.vercel.app"  # <-- Replace with your actual Vercel URL
+    ],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
@@ -19,7 +22,7 @@ app.add_middleware(
 
 UPLOAD_DIR = "uploads"
 OUTPUT_DIR = "outputs"
-GEMINI_KEY = "AIzaSyBIKd_rGYsfC2sAsOJDAstEaF1UDzEN58k"  # Replace with env var for prod
+GEMINI_KEY = os.environ.get("GEMINI_KEY", "AIzaSyBIKd_rGYsfC2sAsOJDAstEaF1UDzEN58k")  # Use env var for Render
 os.makedirs(UPLOAD_DIR, exist_ok=True)
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 
