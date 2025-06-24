@@ -2,9 +2,6 @@ services:
   - type: web
     name: valueaiocr-backend
     env: python
-    pythonVersion: "3.10.14"
+    pythonVersion: "3.12.7"
     buildCommand: pip install -r requirements.txt
-    startCommand: uvicorn backend_api:app --host 0.0.0.0 --port 10000
-    envVars:
-      - key: GEMINI_KEY
-        value: AIzaSyBIKd_rGYsfC2sAsOJDAstEaF1UDzEN58k 
+    startCommand: uvicorn backend_api:app --host 0.0.0.0 --port 10000 
