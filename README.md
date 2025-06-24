@@ -1,6 +1,6 @@
 # valueAiOCR
 
-A solution for the Value AI Labs – GenAI Internship Take-Home Assignment: **Reconstruct the Jumbled PDF**
+A solution for the Value AI Labs GenAI Internship Take-Home Assignment: **Reconstruct the Jumbled PDF**
 
 ---
 
@@ -9,22 +9,22 @@ A solution for the Value AI Labs – GenAI Internship Take-Home Assignment: **Re
 > **Challenge:**
 > You've been handed a multi-page scanned PDF where the pages are randomly shuffled — a surprisingly common issue in the mortgage and lending industry. Your task is to build a tool that can analyze and reorder the pages to restore the document to its likely original sequence.
 
-### **What This App Does**
-- Accepts a jumbled PDF as input
-- Analyzes page content using OCR, LLMs, and embeddings
-- Outputs a reordered PDF
-- Provides logs, reasoning, and natural language notes explaining the page order
-- **Bonus:**
-  - Adds a Table of Contents based on detected sections
-  - Identifies missing or duplicate pages (if any)
+---
+
+## 📂 Sample Input/Output PDFs
+
+- **Input (Jumbled) PDF:** [Download from Google Drive](https://drive.google.com/file/d/1-eSLcSWlnQiyHv2aX7ATuY8pjVGnzny9/view?usp=sharing)
+- **Output (Ordered) PDF:** [Download from Google Drive](https://drive.google.com/file/d/1dlSJRUChBlMFQ6aHaRvt6U9ZhuaAdTfC/view?usp=sharing)
 
 ---
 
-## 🚀 Project Overview
+## 🎥 Video Walkthrough
 
-**valueAiOCR** lets you upload a messy, scanned PDF and get back an intelligently ordered, summarized, and table-of-contents-enhanced PDF. It uses OCR to extract text, AI to understand and order pages, and a modern web interface for ease of use.
+Watch a full demo and explanation here:  
+[https://www.loom.com/share/5e25aa1e37884504b15035d48bc47ee1?sid=9cecb391-37ec-40f3-8d46-a2acbc5ccd19](https://www.loom.com/share/5e25aa1e37884504b15035d48bc47ee1?sid=9cecb391-37ec-40f3-8d46-a2acbc5ccd19)
 
 ---
+
 
 ## 🛠️ Workflow
 
@@ -46,19 +46,21 @@ A solution for the Value AI Labs – GenAI Internship Take-Home Assignment: **Re
 - **Backend:** FastAPI, hosted on Render ([https://valueaiocr.onrender.com](https://valueaiocr.onrender.com))
 - **Frontend:** React, hosted on Vercel ([https://value-ai-ocr.vercel.app](https://value-ai-ocr.vercel.app))
 
+
+### **What This App Does**
+- Accepts a jumbled PDF as input
+- Analyzes page content using OCR, LLMs, and embeddings
+- Outputs a reordered PDF
+- Provides logs, reasoning, and natural language notes explaining the page order
+- **Bonus:**
+  - Adds a Table of Contents based on detected sections
+  - Identifies missing or duplicate pages (if any)
+
 ---
 
-## 📂 Sample Input/Output PDFs
+## 🚀 Project Overview
 
-- **Input (Jumbled) PDF:** [Download from Google Drive](https://drive.google.com/file/d/1-eSLcSWlnQiyHv2aX7ATuY8pjVGnzny9/view?usp=sharing)
-- **Output (Ordered) PDF:** [Download from Google Drive](https://drive.google.com/file/d/1dlSJRUChBlMFQ6aHaRvt6U9ZhuaAdTfC/view?usp=sharing)
-
----
-
-## 🎥 Video Walkthrough
-
-Watch a full demo and explanation here:  
-[https://www.loom.com/share/5e25aa1e37884504b15035d48bc47ee1?sid=9cecb391-37ec-40f3-8d46-a2acbc5ccd19](https://www.loom.com/share/5e25aa1e37884504b15035d48bc47ee1?sid=9cecb391-37ec-40f3-8d46-a2acbc5ccd19)
+**valueAiOCR** lets you upload a messy, scanned PDF and get back an intelligently ordered, summarized, and table-of-contents-enhanced PDF. It uses OCR to extract text, AI to understand and order pages, and a modern web interface for ease of use.
 
 ---
 
