@@ -13,7 +13,7 @@ app.add_middleware(
     CORSMiddleware,
     allow_origins=[
         "http://localhost:3000",
-        "https://your-vercel-app.vercel.app"  # <-- Replace with your actual Vercel URL
+        "https://value-ai-ocr.vercel.app"
     ],
     allow_credentials=True,
     allow_methods=["*"],
