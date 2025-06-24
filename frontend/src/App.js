@@ -22,7 +22,7 @@ function App() {
     const formData = new FormData();
     formData.append('file', selectedFile);
     try {
-      const response = await fetch('http://localhost:8000/process_pdf/', {
+      const response = await fetch('https://valueaiocr.onrender.com/process_pdf/', {
         method: 'POST',
         body: formData,
       });
