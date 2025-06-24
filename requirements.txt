@@ -11,7 +11,6 @@ opencv-python==4.9.0.80
 # NLP and Text Similarity
 sentence-transformers==2.7.0
 scikit-learn==1.4.2
-numpy==1.26.4
 pandas==2.2.1
 
 # LLM Integration
