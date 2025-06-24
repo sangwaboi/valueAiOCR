@@ -1,6 +1,22 @@
 # valueAiOCR
 
-A web-based tool to reconstruct, reorder, and summarize jumbled scanned PDFs (like loan/mortgage files) using OCR, semantic analysis, and LLMs.
+A solution for the Value AI Labs – GenAI Internship Take-Home Assignment: **Reconstruct the Jumbled PDF**
+
+---
+
+## 📝 Problem Statement
+
+> **Challenge:**
+> You've been handed a multi-page scanned PDF where the pages are randomly shuffled — a surprisingly common issue in the mortgage and lending industry. Your task is to build a tool that can analyze and reorder the pages to restore the document to its likely original sequence.
+
+### **What This App Does**
+- Accepts a jumbled PDF as input
+- Analyzes page content using OCR, LLMs, and embeddings
+- Outputs a reordered PDF
+- Provides logs, reasoning, and natural language notes explaining the page order
+- **Bonus:**
+  - Adds a Table of Contents based on detected sections
+  - Identifies missing or duplicate pages (if any)
 
 ---
 
@@ -21,6 +37,7 @@ A web-based tool to reconstruct, reorder, and summarize jumbled scanned PDFs (li
    - Handles API rate limits by batching requests
 6. **PDF Reconstruction:** Pages are reordered, a table of contents is generated, and a new PDF is created
 7. **Download:** User downloads the organized PDF
+8. **Logs & Reasoning:** The backend produces a JSON report explaining the ordering and summarization
 
 ---
 
@@ -31,6 +48,13 @@ A web-based tool to reconstruct, reorder, and summarize jumbled scanned PDFs (li
 
 ---
 
+## 📂 Sample Input/Output PDFs
+
+- **Input (Jumbled) PDF:** [Download from Google Drive](https://drive.google.com/file/d/1-eSLcSWlnQiyHv2aX7ATuY8pjVGnzny9/view?usp=sharing)
+- **Output (Ordered) PDF:** [Download from Google Drive](https://drive.google.com/file/d/1dlSJRUChBlMFQ6aHaRvt6U9ZhuaAdTfC/view?usp=sharing)
+
+---
+
 ## 🎥 Video Walkthrough
 
 Watch a full demo and explanation here:  
@@ -38,7 +62,7 @@ Watch a full demo and explanation here:
 
 ---
 
-## 📂 Adding Sample Input/Output PDFs
+## 📂 Adding Your Own PDFs
 
 You can add your own sample PDFs and outputs to the repository for demo or testing purposes:
 
